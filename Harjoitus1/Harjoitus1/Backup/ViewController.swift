@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  SuperCool
+//  Harjoitus1
 //
-//  Created by Tonny on 26/11/15.
+//  Created by Tonny on 26.11.2015.
 //  Copyright © 2015 Tonny. All rights reserved.
 //
 
@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var CoolLogo: UIImageView!
-    @IBOutlet weak var CoolBg: UIImageView!
-    @IBOutlet weak var UnCoolButton: UIButton!
-    
+    @IBOutlet weak var RedBg: UIImageView!
+    @IBOutlet weak var BlueBG: UIImageView!
+    @IBOutlet weak var RedTxt: UIButton!
+    @IBOutlet weak var BlueTxt: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func MakeMeNotSoUnCool(sender: AnyObject) {
-        CoolLogo.hidden = false
-        CoolBg.hidden = false
-        UnCoolButton.hidden = true
+    @IBAction func HideBlue(sender: AnyObject) {
+        BlueBG.hidden = true
     }
 
 }
